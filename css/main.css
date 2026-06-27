@@ -1,0 +1,431 @@
+/* Default CSS Code */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+:focus * {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+button {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    width: 100%;
+}
+
+img,
+svg {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* 
+
+font-family: "Realce";
+font-family: "Mentimun";
+font-family: "Jost", sans-serif;
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 80px;
+    line-height: 1;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: "Realce";
+    font-weight: 800;
+}
+
+h3 {
+    font-family: "Mentimun";
+    font-weight: 400;
+}
+
+.goody-font--20 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.goody-font--24 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.goody-font--32 {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.goody-font--40 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.goody-font--20 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.goody-font--80 {
+    font-size: 80px;
+    line-height: 1;
+}
+
+.goody-font--140 {
+    font-size: 140px;
+    line-height: 1;
+}
+
+.goody-subtitle {
+    font-size: 32px;
+    line-height: 1;
+    color: #e65222;
+}
+
+/* Bootstrap Container */
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1544px;
+    }
+}
+
+main {
+    margin-top: 124px;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    background: #ffffe5;
+    color: #000000;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+/* Default CSS Code */
+
+/* Reusable Code */
+
+.goody-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.goody-btn {
+    font-family: "Jost", sans-serif;
+    width: fit-content;
+    padding: 20px 40px;
+    height: 64px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 16px;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: capitalize;
+    font-weight: 500;
+    background: #e65222;
+    color: #fff;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 0 #000;
+}
+
+.goody-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.goody-btn span {
+    flex: 1;
+}
+
+.goody-btn:hover {
+    background: #d73c08;
+}
+
+.goody-btn--yellow {
+    background: #ffff00;
+    color: #000;
+}
+
+.goody-content-center {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Reusable Code */
+
+/* Header Area */
+
+.goody-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-top: 24px;
+}
+
+.goody-header .navbar {
+    background: #fff;
+    padding: 16px 40px;
+    border: 2px solid #000;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
+}
+
+.goody-header .navbar-brand {
+    width: fit-content;
+    height: 64px;
+}
+
+.goody-header .navbar-nav {
+    gap: 24px;
+}
+
+.goody-header .nav-link {
+    font-size: 20px;
+    padding: 0 !important;
+    color: #000;
+}
+
+.goody-header .nav-link:hover {
+    color: #ef3e33;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #ef3e33;
+}
+
+/* Header Area */
+
+/* Hero Area */
+
+.goody-hero {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 250px;
+}
+
+.goody-overflow {
+    overflow: hidden;
+}
+
+.goody-hero__image {
+    position: absolute;
+}
+
+.goody-hero__image--left {
+    bottom: -150px;
+    left: -468px;
+    width: 1126px;
+    height: 750px;
+}
+
+.goody-hero__image--right {
+    bottom: -227px;
+    right: -380px;
+    width: 1020px;
+    height: 904px;
+}
+
+.goody-hero__content {
+    text-align: center;
+    max-width: 1260px;
+}
+
+.goody-hero__logo {
+    width: 100%;
+    height: 220px;
+}
+
+.goody-hero h3 {
+    margin-top: 24px;
+}
+
+.goody-hero h1 {
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.goody-hero h1 span {
+    display: block;
+}
+
+.goody-hero p {
+    margin-top: 6px;
+    max-width: 820px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.goody-hero .goody-btns {
+    margin-top: 24px;
+}
+
+/* Hero Area */
+
+/* Goody Opening */
+
+.goody-opening {
+    margin-bottom: 100px;
+    position: relative;
+    height: 830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.goody-opening--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.goody-opening .container {
+    position: relative;
+    z-index: 20;
+}
+
+.goody-opening__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.goody-opening__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+    background: #fff;
+    color: #000;
+    padding: 24px;
+    border: 2px solid #000;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    box-shadow: 2px 2px 0 0 #000;
+}
+
+.goody-opening__card--yellow {
+    background: #ffff00;
+}
+
+.goody-opening__card--black {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 0 0 #fff;
+}
+
+.goody-opening__card--yellow-mute {
+    background: #ffffe5;
+}
+
+.goody-opening__card h4 {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.goody-opening__card-descs p {
+    letter-spacing: -1px;
+}
+
+.goody-opening__lines p {
+    margin-bottom: 16px;
+}
+
+.goody-opening__lines p:last-of-type {
+    margin-bottom: 0;
+}
+
+.goody-opening__phone a {
+    color: #fff;
+}
+
+.goody-opening__phone a:hover {
+    text-decoration: underline;
+}
+
+.goody-opening__card--black .goody-btn {
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 0 0 #fff;
+}
+
+/* Goody Opening */
