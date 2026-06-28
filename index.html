@@ -105,9 +105,10 @@
 
         <!-- Main Content -->
         <main>
-            <div class="goody-overflow">
-                <!-- Hero Area -->
-                <section class="goody-hero">
+            <!-- Hero Area -->
+            <section class="goody-hero">
+                <!-- Hero Main -->
+                <div class="goody-hero-main">
                     <img
                         class="goody-hero__image goody-hero__image--left"
                         src="images/hero-left-image.png"
@@ -122,7 +123,7 @@
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col">
                                 <div
                                     class="goody-hero__content goody-content-center"
                                 >
@@ -173,170 +174,423 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <!-- Hero Area -->
+                </div>
+                <!-- Hero Main -->
 
                 <!-- Goody Opening -->
-                <section class="goody-opening">
+                <div class="goody-opening goody-round-bg-parent">
                     <img
-                        class="goody-opening--bg"
+                        class="goody-round-bg goody-round-bg--opening"
                         src="images/goody-opening-bg.svg"
                         alt="opening background"
                     />
 
                     <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="goody-opening__cards">
-                                    <!-- Single Card -->
-                                    <div
-                                        class="goody-opening__card goody-opening__card--yellow"
-                                    >
-                                        <div class="goody-opening__card-top">
-                                            <h4 class="goody-font--40">
-                                                Hours of Operation
-                                            </h4>
+                        <div class="row row-cols-4 goody-cards-grid">
+                            <!-- Single Card -->
+                            <div class="col">
+                                <div
+                                    class="goody-opening__card goody-opening__card--yellow goody-shadow"
+                                >
+                                    <div class="goody-opening__card-top">
+                                        <h4 class="goody-font--40">
+                                            Hours of Operation
+                                        </h4>
 
+                                        <div
+                                            class="goody-opening__card-content"
+                                        >
                                             <div
-                                                class="goody-opening__card-content"
+                                                class="goody-opening__card-descs"
                                             >
-                                                <div
-                                                    class="goody-opening__card-descs"
-                                                >
-                                                    <p>
-                                                        Monday, Tuesday,
-                                                        Thursday and
-                                                    </p>
-                                                    <p>
-                                                        Friday: 6:00 AM – 2:00
-                                                        PM
-                                                    </p>
-                                                    <p>Wednesday: Closed</p>
-                                                    <p>
-                                                        Saturday: 7:00 AM – 2:00
-                                                        PM
-                                                    </p>
-                                                    <p>
-                                                        Sunday: 7:00 AM – 1:30
-                                                        PM
-                                                    </p>
-                                                </div>
+                                                <p>
+                                                    Monday, Tuesday, Thursday
+                                                    and
+                                                </p>
+                                                <p>Friday: 6:00 AM – 2:00 PM</p>
+                                                <p>Wednesday: Closed</p>
+                                                <p>
+                                                    Saturday: 7:00 AM – 2:00 PM
+                                                </p>
+                                                <p>Sunday: 7:00 AM – 1:30 PM</p>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <a href="#" class="goody-btn">
+                                    <a href="#" class="goody-btn">
+                                        <img src="images/call.svg" alt="menu" />
+                                        <span>Tap To Call</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Single Card -->
+
+                            <!-- Single Card -->
+                            <div class="col">
+                                <div class="goody-opening__card goody-shadow">
+                                    <div class="goody-opening__card-top">
+                                        <h4 class="goody-font--40">Location</h4>
+
+                                        <div
+                                            class="goody-opening__card-content"
+                                        >
+                                            <div
+                                                class="goody-opening__location goody-opening__lines"
+                                            >
+                                                <p>Visit Us</p>
+                                                <p>
+                                                    3817 Market Street
+                                                    Wilmington, N.C. 28403
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="goody-btn">
+                                        <img
+                                            src="images/directions.svg"
+                                            alt="directions"
+                                        />
+                                        <span>Get Directions</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Single Card -->
+
+                            <!-- Single Card -->
+                            <div class="col">
+                                <div
+                                    class="goody-opening__card goody-opening__card--black goody-shadow--white"
+                                >
+                                    <div class="goody-opening__card-top">
+                                        <h4 class="goody-font--40">Phone</h4>
+
+                                        <div
+                                            class="goody-opening__card-content"
+                                        >
+                                            <div class="goody-opening__phone">
+                                                <a href="tel:+9107620444"
+                                                    >(910) 762-0444</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="goody-btn">
+                                        <img src="images/call.svg" alt="menu" />
+                                        <span>Tap To Call</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Single Card -->
+
+                            <!-- Single Card -->
+                            <div class="col">
+                                <div
+                                    class="goody-opening__card goody-opening__card--yellow-mute"
+                                >
+                                    <div class="goody-opening__card-top">
+                                        <h4 class="goody-font--40">Location</h4>
+
+                                        <div
+                                            class="goody-opening__card-content"
+                                        >
+                                            <div class="goody-opening__lines">
+                                                <p>Follow Us</p>
+                                                <p>See Updates & Specials</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="goody-btn">
+                                        <img
+                                            src="images/facebook.svg"
+                                            alt="facebook"
+                                        />
+                                        <span>Visit Facebook</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Single Card -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Goody Opening -->
+            </section>
+            <!-- Hero Area -->
+
+            <!-- Featured Area -->
+            <section class="goody-featured">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div
+                                class="goody-section-content goody-section-content--featured text-center"
+                            >
+                                <h3 class="goody-subtitle">Featured Food</h3>
+
+                                <h2>Diner Favorites Made Fresh Every Day</h2>
+
+                                <p>
+                                    Whether you're stopping in for breakfast,
+                                    lunch, or your favorite comfort food,
+                                    there's always something satisfying waiting
+                                    at Goody Goody.
+                                </p>
+
+                                <a href="#" class="goody-btn mx-auto">
+                                    <img src="images/menu.svg" alt="menu" />
+                                    <span>View Menu</span>
+                                </a>
+                            </div>
+
+                            <div class="goody-food-cards">
+                                <div class="row row-cols-2 goody-cards-grid">
+                                    <!-- Single Card -->
+                                    <div class="col">
+                                        <div class="goody-food-card">
                                             <img
-                                                src="images/call.svg"
-                                                alt="menu"
+                                                class="goody-food-card__image goody-shadow"
+                                                src="images/food-1.jpg"
+                                                alt="food"
                                             />
-                                            <span>Tap To Call</span>
-                                        </a>
+
+                                            <div
+                                                class="goody-food-card__content text-center"
+                                            >
+                                                <h4 class="goody-font--40">
+                                                    Signature Omelets
+                                                </h4>
+
+                                                <p>
+                                                    Made fresh to order with
+                                                    your favorite ingredients.
+                                                </p>
+
+                                                <a
+                                                    href="#"
+                                                    class="goody-btn mx-auto"
+                                                >
+                                                    <img
+                                                        src="images/menu.svg"
+                                                        alt="menu"
+                                                    />
+                                                    <span>View Menu</span>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- Single Card -->
 
                                     <!-- Single Card -->
-                                    <div class="goody-opening__card">
-                                        <div class="goody-opening__card-top">
-                                            <h4 class="goody-font--40">
-                                                Location
-                                            </h4>
+                                    <div class="col">
+                                        <div class="goody-food-card">
+                                            <img
+                                                class="goody-food-card__image goody-shadow"
+                                                src="images/food-1.jpg"
+                                                alt="food"
+                                            />
 
                                             <div
-                                                class="goody-opening__card-content"
+                                                class="goody-food-card__content text-center"
                                             >
-                                                <div
-                                                    class="goody-opening__location goody-opening__lines"
+                                                <h4 class="goody-font--40">
+                                                    Signature Omelets
+                                                </h4>
+
+                                                <p>
+                                                    Made fresh to order with
+                                                    your favorite ingredients.
+                                                </p>
+
+                                                <a
+                                                    href="#"
+                                                    class="goody-btn mx-auto"
                                                 >
-                                                    <p>Visit Us</p>
-                                                    <p>
-                                                        3817 Market Street
-                                                        Wilmington, N.C. 28403
-                                                    </p>
-                                                </div>
+                                                    <img
+                                                        src="images/menu.svg"
+                                                        alt="menu"
+                                                    />
+                                                    <span>View Menu</span>
+                                                </a>
                                             </div>
                                         </div>
-
-                                        <a href="#" class="goody-btn">
-                                            <img
-                                                src="images/directions.svg"
-                                                alt="directions"
-                                            />
-                                            <span>Get Directions</span>
-                                        </a>
                                     </div>
                                     <!-- Single Card -->
 
                                     <!-- Single Card -->
-                                    <div
-                                        class="goody-opening__card goody-opening__card--black"
-                                    >
-                                        <div class="goody-opening__card-top">
-                                            <h4 class="goody-font--40">
-                                                Phone
-                                            </h4>
+                                    <div class="col">
+                                        <div class="goody-food-card">
+                                            <img
+                                                class="goody-food-card__image goody-shadow"
+                                                src="images/food-1.jpg"
+                                                alt="food"
+                                            />
 
                                             <div
-                                                class="goody-opening__card-content"
+                                                class="goody-food-card__content text-center"
                                             >
-                                                <div
-                                                    class="goody-opening__phone"
+                                                <h4 class="goody-font--40">
+                                                    Signature Omelets
+                                                </h4>
+
+                                                <p>
+                                                    Made fresh to order with
+                                                    your favorite ingredients.
+                                                </p>
+
+                                                <a
+                                                    href="#"
+                                                    class="goody-btn mx-auto"
                                                 >
-                                                    <a href="tel:+9107620444"
-                                                        >(910) 762-0444</a
-                                                    >
-                                                </div>
+                                                    <img
+                                                        src="images/menu.svg"
+                                                        alt="menu"
+                                                    />
+                                                    <span>View Menu</span>
+                                                </a>
                                             </div>
                                         </div>
-
-                                        <a href="#" class="goody-btn">
-                                            <img
-                                                src="images/call.svg"
-                                                alt="menu"
-                                            />
-                                            <span>Tap To Call</span>
-                                        </a>
                                     </div>
                                     <!-- Single Card -->
 
                                     <!-- Single Card -->
-                                    <div
-                                        class="goody-opening__card goody-opening__card--yellow-mute"
-                                    >
-                                        <div class="goody-opening__card-top">
-                                            <h4 class="goody-font--40">
-                                                Location
-                                            </h4>
+                                    <div class="col">
+                                        <div class="goody-food-card">
+                                            <img
+                                                class="goody-food-card__image goody-shadow"
+                                                src="images/food-1.jpg"
+                                                alt="food"
+                                            />
 
                                             <div
-                                                class="goody-opening__card-content"
+                                                class="goody-food-card__content text-center"
                                             >
-                                                <div
-                                                    class="goody-opening__lines"
+                                                <h4 class="goody-font--40">
+                                                    Signature Omelets
+                                                </h4>
+
+                                                <p>
+                                                    Made fresh to order with
+                                                    your favorite ingredients.
+                                                </p>
+
+                                                <a
+                                                    href="#"
+                                                    class="goody-btn mx-auto"
                                                 >
-                                                    <p>Follow Us</p>
-                                                    <p>
-                                                        See Updates & Specials
-                                                    </p>
-                                                </div>
+                                                    <img
+                                                        src="images/menu.svg"
+                                                        alt="menu"
+                                                    />
+                                                    <span>View Menu</span>
+                                                </a>
                                             </div>
                                         </div>
-
-                                        <a href="#" class="goody-btn">
-                                            <img
-                                                src="images/facebook.svg"
-                                                alt="facebook"
-                                            />
-                                            <span>Visit Facebook</span>
-                                        </a>
                                     </div>
                                     <!-- Single Card -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <!-- Goody Opening -->
-            </div>
+                </div>
+            </section>
+            <!-- Featured Area -->
+
+            <!-- Story Area -->
+            <section class="goody-story goody-round-bg-parent">
+                <img
+                    class="goody-round-bg goody-round-bg--story"
+                    src="images/story-bg.svg"
+                    alt="Story background"
+                />
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="goody-story__layout">
+                                <div
+                                    class="goody-story__content goody-section-content"
+                                >
+                                    <h3 class="goody-subtitle">Our Story</h3>
+                                    <h2>
+                                        A Wilmington Tradition Built on Family,
+                                        Hard Work & Great Food
+                                    </h2>
+
+                                    <p>
+                                        For years, Goody Goody Omelet House has
+                                        been more than a restaurant. It's a
+                                        place where families gather, neighbors
+                                        catch up, and regulars are greeted by
+                                        name. Built on traditional values, hard
+                                        work, and a passion for serving quality
+                                        food, Goody Goody continues to be a
+                                        local favorite for breakfast and lunch.
+                                    </p>
+
+                                    <ul class="goody-story__list">
+                                        <li
+                                            class="goody-story__list-item goody-shadow--sm"
+                                        >
+                                            <img
+                                                src="images/family.svg"
+                                                alt="Family First"
+                                            />
+
+                                            <span>Family First</span>
+                                        </li>
+                                        <li
+                                            class="goody-story__list-item goody-shadow--sm"
+                                        >
+                                            <img
+                                                src="images/family.svg"
+                                                alt="Family First"
+                                            />
+
+                                            <span>Family First</span>
+                                        </li>
+                                        <li
+                                            class="goody-story__list-item goody-shadow--sm"
+                                        >
+                                            <img
+                                                src="images/family.svg"
+                                                alt="Family First"
+                                            />
+
+                                            <span>Family First</span>
+                                        </li>
+                                        <li
+                                            class="goody-story__list-item goody-shadow--sm"
+                                        >
+                                            <img
+                                                src="images/family.svg"
+                                                alt="Family First"
+                                            />
+
+                                            <span>Family First</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="goody-story__images">
+                                    <img
+                                        class="goody-story__image goody-story__image1 goody-shadow"
+                                        src="images/story-1.jpg"
+                                        alt="story"
+                                    />
+                                    <img
+                                        class="goody-story__image goody-story__image2 goody-shadow"
+                                        src="images/story-2.jpg"
+                                        alt="story"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Story Area -->
         </main>
         <!-- Main Content -->
 

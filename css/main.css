@@ -80,6 +80,7 @@ h5,
 h6 {
     font-family: "Realce";
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -157,6 +158,26 @@ body {
 
 /* Reusable Code */
 
+.goody-cards-grid {
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 40px;
+}
+
+.goody-shadow {
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 0 #000;
+}
+
+.goody-shadow--sm {
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 0 #000;
+}
+
+.goody-shadow--white {
+    border: 2px solid #fff;
+    box-shadow: 4px 4px 0 0 #fff;
+}
+
 .goody-btns {
     display: flex;
     align-items: center;
@@ -217,6 +238,40 @@ body {
     margin-right: auto;
 }
 
+.goody-section-content h2 {
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+
+.goody-section-content p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.goody-section-content .goody-btn {
+    margin-top: 24px;
+}
+
+.goody-round-bg-parent {
+    position: relative;
+}
+
+.goody-round-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.goody-round-bg-parent .container {
+    position: relative;
+    z-index: 20;
+}
+
 /* Reusable Code */
 
 /* Header Area */
@@ -270,17 +325,23 @@ body {
 /* Hero Area */
 
 .goody-hero {
+    overflow: hidden;
+}
+
+.goody-hero-main {
     position: relative;
     padding-top: 120px;
     padding-bottom: 250px;
 }
 
-.goody-overflow {
-    overflow: hidden;
+.goody-hero-main .container {
+    position: relative;
+    z-index: 30;
 }
 
 .goody-hero__image {
     position: absolute;
+    z-index: 10;
 }
 
 .goody-hero__image--left {
@@ -337,7 +398,6 @@ body {
 /* Goody Opening */
 
 .goody-opening {
-    margin-bottom: 100px;
     position: relative;
     height: 830px;
     display: flex;
@@ -345,28 +405,13 @@ body {
     justify-content: center;
 }
 
-.goody-opening--bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 10;
-}
-
 .goody-opening .container {
     position: relative;
     z-index: 20;
 }
 
-.goody-opening__cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-}
-
 .goody-opening__card {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -374,13 +419,11 @@ body {
     background: #fff;
     color: #000;
     padding: 24px;
-    border: 2px solid #000;
     border-radius: 32px;
     -webkit-border-radius: 32px;
     -moz-border-radius: 32px;
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
-    box-shadow: 2px 2px 0 0 #000;
 }
 
 .goody-opening__card--yellow {
@@ -390,8 +433,6 @@ body {
 .goody-opening__card--black {
     background: #000;
     color: #fff;
-    border: 2px solid #fff;
-    box-shadow: 2px 2px 0 0 #fff;
 }
 
 .goody-opening__card--yellow-mute {
@@ -429,3 +470,142 @@ body {
 }
 
 /* Goody Opening */
+
+/* Featured Food */
+.goody-featured {
+    padding: 140px 0;
+}
+
+.goody-section-content--featured p {
+    max-width: 1000px;
+}
+
+.goody-food-cards {
+    margin-top: 80px;
+}
+
+.goody-food-card {
+    height: 100%;
+}
+
+.goody-food-card__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 740/550;
+    object-fit: cover;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.goody-food-card__content {
+    padding-top: 32px;
+}
+
+.goody-food-card__content p {
+    margin-top: 16px;
+}
+
+.goody-food-card__content .goody-btn {
+    margin-top: 24px;
+}
+
+/* Featured Food */
+
+/* Story Area */
+.goody-story {
+    position: relative;
+    min-height: 1218px;
+    padding: 200px 0;
+}
+
+.goody-story__layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.goody-story__content {
+    flex: 1;
+}
+
+.goody-story__images {
+    width: 100%;
+    max-width: 650px;
+}
+
+.goody-story__content h2,
+.goody-story__content h3,
+.goody-story__content p {
+    color: #fff;
+}
+
+.goody-story__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.goody-story__list-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 40px;
+    background: #ffffe5;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+
+.goody-story__list-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.goody-story__list-item span {
+    flex: 1;
+}
+
+.goody-story__images {
+    position: relative;
+}
+
+.goody-story__image {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.goody-story__image1 {
+    top: -60px;
+    left: 0;
+    transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+}
+
+.goody-story__image2 {
+    top: 225px;
+    right: -108px;
+    transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+}
+
+/* Story Area */
