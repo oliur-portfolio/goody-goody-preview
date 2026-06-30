@@ -616,6 +616,102 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="goody-marquee-area">
+                    <!-- Marquee Images Effect -->
+                    <div class="goody-marquee">
+                        <div class="goody-marquee-track">
+                            <!-- Original -->
+                            <div class="goody-marquee-item">
+                                <img src="images/food-1.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-2.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-3.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-4.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-5.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-6.jpg" alt="" />
+                            </div>
+
+                            <!-- Duplicate -->
+                            <div class="goody-marquee-item">
+                                <img src="images/food-1.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-2.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-3.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-4.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-5.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-6.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Marquee Images Effect -->
+
+                    <!-- Marquee Images Effect -->
+                    <div class="goody-marquee">
+                        <div
+                            class="goody-marquee-track goody-marquee-track--reverse"
+                        >
+                            <!-- Original -->
+                            <div class="goody-marquee-item">
+                                <img src="images/food-1.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-2.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-3.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-4.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-5.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-6.jpg" alt="" />
+                            </div>
+
+                            <!-- Duplicate -->
+                            <div class="goody-marquee-item">
+                                <img src="images/food-1.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-2.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-3.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-4.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-5.jpg" alt="" />
+                            </div>
+                            <div class="goody-marquee-item">
+                                <img src="images/food-6.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Marquee Images Effect -->
+                </div>
             </section>
             <!-- Cooking Area -->
 
@@ -646,22 +742,31 @@
                                     story and discover what makes this
                                     Wilmington landmark so special.
                                 </p>
-
-                                <a
-                                    href="#"
-                                    class="goody-btn goody-btn--yellow mx-auto"
-                                >
-                                    <img src="images/play.svg" alt="play" />
-                                    <span>Watch Our Story</span>
-                                </a>
                             </div>
 
-                            <div class="goody-media__main">
+                            <div
+                                class="goody-youtube-video goody-shadow"
+                                data-video-id="Nf87TObCGJY"
+                            >
                                 <img
-                                    class="goody-media__image goody-shadow"
-                                    src="images/media.jpg"
-                                    alt="media"
+                                    class="goody-youtube-thumbnail"
+                                    src="images/video-thumbnail.jpg"
+                                    alt="Video Thumbnail"
                                 />
+
+                                <button
+                                    class="goody-youtube-play-btn"
+                                    aria-label="Play Video"
+                                >
+                                    <svg
+                                        width="28"
+                                        height="28"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                    >
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1024,5 +1129,25 @@
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"
         ></script>
+
+        <script>
+            document
+                .querySelectorAll(".goody-youtube-video")
+                .forEach((video) => {
+                    video.addEventListener("click", () => {
+                        const videoId = video.dataset.videoId;
+
+                        video.innerHTML = `
+            <iframe
+                src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+                title="YouTube Video Player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        `;
+                    });
+                });
+        </script>
     </body>
 </html>
