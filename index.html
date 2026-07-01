@@ -41,7 +41,7 @@
         <!-- Header Area -->
         <header class="goody-header">
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
+                <nav id="goody-navbar" class="navbar navbar-expand-lg">
                     <div class="container-fluid px-0">
                         <a class="navbar-brand py-0 me-0" href="#">
                             <img
@@ -69,31 +69,44 @@
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a
-                                        class="nav-link active"
+                                        class="nav-link"
                                         aria-current="page"
-                                        href="#"
+                                        href="#home"
                                         >Home</a
                                     >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Menu</a>
+                                    <a
+                                        class="nav-link"
+                                        href="images/food-menu.pdf"
+                                        target="_blank"
+                                        >Menu</a
+                                    >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Our Story</a>
+                                    <a class="nav-link" href="#story"
+                                        >Our Story</a
+                                    >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Gallery</a>
+                                    <a class="nav-link" href="#gallery"
+                                        >Gallery</a
+                                    >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Featured In</a>
+                                    <a class="nav-link" href="#featured"
+                                        >Featured In</a
+                                    >
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Visit Us</a>
+                                    <a class="nav-link" href="#visit"
+                                        >Visit Us</a
+                                    >
                                 </li>
                             </ul>
                         </div>
 
-                        <a href="#" class="goody-btn">
+                        <a href="tel:+19107620444" class="goody-btn">
                             <img src="images/call.svg" alt="call" />
                             <span>Call Now</span>
                         </a>
@@ -106,7 +119,7 @@
         <!-- Main Content -->
         <main>
             <!-- Hero Area -->
-            <section class="goody-hero">
+            <section id="home" class="goody-hero">
                 <!-- Hero Main -->
                 <div class="goody-hero-main">
                     <img
@@ -151,7 +164,11 @@
                                     </p>
 
                                     <div class="goody-btns">
-                                        <a href="#" class="goody-btn">
+                                        <a
+                                            href="images/food-menu.pdf"
+                                            target="_blank"
+                                            class="goody-btn"
+                                        >
                                             <img
                                                 src="images/menu.svg"
                                                 alt="menu"
@@ -160,7 +177,7 @@
                                         </a>
 
                                         <a
-                                            href="#"
+                                            href="tel:+19107620444"
                                             class="goody-btn goody-btn--yellow"
                                         >
                                             <img
@@ -186,7 +203,9 @@
                     />
 
                     <div class="container">
-                        <div class="row row-cols-4 goody-cards-grid">
+                        <div
+                            class="row row-cols-2 row-cols-xxl-4 goody-cards-grid"
+                        >
                             <!-- Single Card -->
                             <div class="col">
                                 <div
@@ -217,7 +236,10 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="goody-btn">
+                                    <a
+                                        href="tel:+19107620444"
+                                        class="goody-btn"
+                                    >
                                         <img src="images/call.svg" alt="menu" />
                                         <span>Tap To Call</span>
                                     </a>
@@ -246,7 +268,12 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="goody-btn">
+                                    <a
+                                        href="https://maps.google.com/?q=3817+Market+Street+Wilmington+NC+28403"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="goody-btn"
+                                    >
                                         <img
                                             src="images/directions.svg"
                                             alt="directions"
@@ -276,7 +303,10 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="goody-btn">
+                                    <a
+                                        href="tel:+19107620444"
+                                        class="goody-btn"
+                                    >
                                         <img src="images/call.svg" alt="menu" />
                                         <span>Tap To Call</span>
                                     </a>
@@ -287,10 +317,10 @@
                             <!-- Single Card -->
                             <div class="col">
                                 <div
-                                    class="goody-opening__card goody-opening__card--yellow-mute"
+                                    class="goody-opening__card goody-opening__card--yellow-mute goody-shadow"
                                 >
                                     <div class="goody-opening__card-top">
-                                        <h4 class="goody-font--40">Location</h4>
+                                        <h4 class="goody-font--40">Facebook</h4>
 
                                         <div
                                             class="goody-opening__card-content"
@@ -302,7 +332,11 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="goody-btn">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.facebook.com/share/1Bj7UFc5zW/"
+                                        class="goody-btn"
+                                    >
                                         <img
                                             src="images/facebook.svg"
                                             alt="facebook"
@@ -320,7 +354,7 @@
             <!-- Hero Area -->
 
             <!-- Featured Area -->
-            <section class="goody-featured">
+            <section id="featured" class="goody-featured">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -338,9 +372,13 @@
                                     at Goody Goody.
                                 </p>
 
-                                <a href="#" class="goody-btn mx-auto">
+                                <a
+                                    href="images/food-menu.pdf"
+                                    target="_blank"
+                                    class="goody-btn mx-auto"
+                                >
                                     <img src="images/menu.svg" alt="menu" />
-                                    <span>View Menu</span>
+                                    <span>View Full Menu</span>
                                 </a>
                             </div>
 
@@ -368,14 +406,15 @@
                                                 </p>
 
                                                 <a
-                                                    href="#"
+                                                    href="images/food-menu.pdf"
+                                                    target="_blank"
                                                     class="goody-btn mx-auto"
                                                 >
                                                     <img
                                                         src="images/menu.svg"
                                                         alt="menu"
                                                     />
-                                                    <span>View Menu</span>
+                                                    <span>View In Menu</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -387,7 +426,7 @@
                                         <div class="goody-food-card">
                                             <img
                                                 class="goody-food-card__image goody-shadow"
-                                                src="images/food-1.jpg"
+                                                src="images/food-2.jpg"
                                                 alt="food"
                                             />
 
@@ -395,23 +434,24 @@
                                                 class="goody-food-card__content text-center"
                                             >
                                                 <h4 class="goody-font--40">
-                                                    Signature Omelets
+                                                    Breakfast Classics
                                                 </h4>
 
                                                 <p>
-                                                    Made fresh to order with
-                                                    your favorite ingredients.
+                                                    Eggs, pancakes, biscuits,
+                                                    bacon, and all the classics.
                                                 </p>
 
                                                 <a
-                                                    href="#"
+                                                    href="images/food-menu.pdf"
+                                                    target="_blank"
                                                     class="goody-btn mx-auto"
                                                 >
                                                     <img
                                                         src="images/menu.svg"
                                                         alt="menu"
                                                     />
-                                                    <span>View Menu</span>
+                                                    <span>View In Menu</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -423,7 +463,7 @@
                                         <div class="goody-food-card">
                                             <img
                                                 class="goody-food-card__image goody-shadow"
-                                                src="images/food-1.jpg"
+                                                src="images/food-3.jpg"
                                                 alt="food"
                                             />
 
@@ -431,23 +471,24 @@
                                                 class="goody-food-card__content text-center"
                                             >
                                                 <h4 class="goody-font--40">
-                                                    Signature Omelets
+                                                    Burgers & Sandwiches
                                                 </h4>
 
                                                 <p>
-                                                    Made fresh to order with
-                                                    your favorite ingredients.
+                                                    Traditional diner favorites
+                                                    served hot and fresh.
                                                 </p>
 
                                                 <a
-                                                    href="#"
+                                                    href="images/food-menu.pdf"
+                                                    target="_blank"
                                                     class="goody-btn mx-auto"
                                                 >
                                                     <img
                                                         src="images/menu.svg"
                                                         alt="menu"
                                                     />
-                                                    <span>View Menu</span>
+                                                    <span>View In Menu</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -459,7 +500,7 @@
                                         <div class="goody-food-card">
                                             <img
                                                 class="goody-food-card__image goody-shadow"
-                                                src="images/food-1.jpg"
+                                                src="images/food-4.jpg"
                                                 alt="food"
                                             />
 
@@ -467,23 +508,24 @@
                                                 class="goody-food-card__content text-center"
                                             >
                                                 <h4 class="goody-font--40">
-                                                    Signature Omelets
+                                                    Daily Specials
                                                 </h4>
 
                                                 <p>
-                                                    Made fresh to order with
-                                                    your favorite ingredients.
+                                                    Local favorites that keep
+                                                    customers coming back.
                                                 </p>
 
                                                 <a
-                                                    href="#"
+                                                    href="images/food-menu.pdf"
+                                                    target="_blank"
                                                     class="goody-btn mx-auto"
                                                 >
                                                     <img
                                                         src="images/menu.svg"
                                                         alt="menu"
                                                     />
-                                                    <span>View Menu</span>
+                                                    <span>View In Menu</span>
                                                 </a>
                                             </div>
                                         </div>
@@ -498,7 +540,7 @@
             <!-- Featured Area -->
 
             <!-- Story Area -->
-            <section class="goody-story goody-round-bg-parent">
+            <section id="story" class="goody-story goody-round-bg-parent">
                 <img
                     class="goody-round-bg goody-round-bg--story"
                     src="images/story-bg.svg"
@@ -535,7 +577,7 @@
                                         >
                                             <img
                                                 src="images/family.svg"
-                                                alt="Family First"
+                                                alt=""
                                             />
 
                                             <span>Family First</span>
@@ -544,31 +586,31 @@
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/tradition.svg"
+                                                alt=""
                                             />
 
-                                            <span>Family First</span>
+                                            <span>Homemade Tradition</span>
                                         </li>
                                         <li
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/community.svg"
+                                                alt=""
                                             />
 
-                                            <span>Family First</span>
+                                            <span>Community Focused</span>
                                         </li>
                                         <li
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/favorite.svg"
+                                                alt=""
                                             />
 
-                                            <span>Family First</span>
+                                            <span>Local Favorite</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -593,7 +635,7 @@
             <!-- Story Area -->
 
             <!-- Cooking Area -->
-            <section class="goody-cooking">
+            <section id="gallery" class="goody-cooking">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -608,7 +650,11 @@
                                     our customers love.
                                 </p>
 
-                                <a href="#" class="goody-btn mx-auto">
+                                <a
+                                    href="images/food-menu.pdf"
+                                    target="_blank"
+                                    class="goody-btn mx-auto"
+                                >
                                     <img src="images/menu.svg" alt="menu" />
                                     <span>View Full Menu</span>
                                 </a>
@@ -775,7 +821,7 @@
             <!-- Media Area -->
 
             <!-- Visit Area -->
-            <section class="goody-visit">
+            <section id="visit" class="goody-visit">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -804,11 +850,11 @@
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
+                                                src="images/call-orange.svg"
                                                 alt="Family First"
                                             />
 
-                                            <a href="tel:+9107620444"
+                                            <a href="tel:+19107620444"
                                                 >(910) 762-0444</a
                                             >
                                         </li>
@@ -816,8 +862,8 @@
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/address.svg"
+                                                alt=""
                                             />
 
                                             <span
@@ -829,93 +875,94 @@
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/hours.svg"
+                                                alt=""
                                             />
 
                                             <span
-                                                >3817 Market Street |
-                                                Wilmington, N.C. 28403</span
+                                                >Monday & Tuesday 6:00 AM – 2:00
+                                                PM</span
                                             >
                                         </li>
                                         <li
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/hours.svg"
+                                                alt=""
                                             />
 
                                             <span
-                                                >3817 Market Street |
-                                                Wilmington, N.C. 28403</span
+                                                >Thursday & Friday 6:00 AM –
+                                                2:00 PM</span
                                             >
                                         </li>
                                         <li
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/hours.svg"
+                                                alt=""
+                                            />
+
+                                            <span>Wednesday: Closed</span>
+                                        </li>
+                                        <li
+                                            class="goody-section-content__list-item goody-shadow--sm"
+                                        >
+                                            <img
+                                                src="images/hours.svg"
+                                                alt=""
                                             />
 
                                             <span
-                                                >3817 Market Street |
-                                                Wilmington, N.C. 28403</span
+                                                >Saturday: 7:00 AM – 2:00
+                                                PM</span
                                             >
                                         </li>
                                         <li
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/hours.svg"
+                                                alt=""
                                             />
 
                                             <span
-                                                >3817 Market Street |
-                                                Wilmington, N.C. 28403</span
+                                                >Sunday: 7:00 AM – 1:30 PM</span
                                             >
                                         </li>
                                         <li
                                             class="goody-section-content__list-item goody-shadow--sm"
                                         >
                                             <img
-                                                src="images/family.svg"
-                                                alt="Family First"
+                                                src="images/parking.svg"
+                                                alt=""
                                             />
 
                                             <span
-                                                >3817 Market Street |
-                                                Wilmington, N.C. 28403</span
-                                            >
-                                        </li>
-                                        <li
-                                            class="goody-section-content__list-item goody-shadow--sm"
-                                        >
-                                            <img
-                                                src="images/family.svg"
-                                                alt="Family First"
-                                            />
-
-                                            <span
-                                                >3817 Market Street |
-                                                Wilmington, N.C. 28403</span
+                                                >Convenient Parking
+                                                Available</span
                                             >
                                         </li>
                                     </ul>
 
                                     <div class="goody-btns">
-                                        <a href="#" class="goody-btn">
+                                        <a
+                                            href="https://maps.google.com/?q=3817+Market+Street+Wilmington+NC+28403"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="goody-btn"
+                                        >
                                             <img
-                                                src="images/menu.svg"
-                                                alt="menu"
+                                                src="images/directions.svg"
+                                                alt=""
                                             />
-                                            <span>View Menu</span>
+                                            <span>Get Directions</span>
                                         </a>
 
                                         <a
-                                            href="#"
+                                            href="tel:+19107620444"
                                             class="goody-btn goody-btn--yellow"
                                         >
                                             <img
@@ -973,7 +1020,9 @@
 
                                 <div class="goody-btns">
                                     <a
-                                        href="#"
+                                        href="https://maps.google.com/?q=3817+Market+Street+Wilmington+NC+28403"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         class="goody-btn goody-btn--white"
                                     >
                                         <img
@@ -984,7 +1033,7 @@
                                     </a>
 
                                     <a
-                                        href="#"
+                                        href="tel:+19107620444"
                                         class="goody-btn goody-btn--yellow"
                                     >
                                         <img
@@ -1023,42 +1072,43 @@
                                     <ul class="goody-footer__links">
                                         <li>
                                             <a
-                                                href="#"
+                                                href="#home"
                                                 class="goody-footer__link"
                                                 >Home</a
                                             >
                                         </li>
                                         <li>
                                             <a
-                                                href="#"
+                                                href="images/food-menu.pdf"
+                                                target="_blank"
                                                 class="goody-footer__link"
                                                 >Menu</a
                                             >
                                         </li>
                                         <li>
                                             <a
-                                                href="#"
+                                                href="#story"
                                                 class="goody-footer__link"
                                                 >Our Story</a
                                             >
                                         </li>
                                         <li>
                                             <a
-                                                href="#"
+                                                href="#gallery"
                                                 class="goody-footer__link"
                                                 >Gallery</a
                                             >
                                         </li>
                                         <li>
                                             <a
-                                                href="#"
+                                                href="#featured"
                                                 class="goody-footer__link"
                                                 >Featured In</a
                                             >
                                         </li>
                                         <li>
                                             <a
-                                                href="#"
+                                                href="#visit"
                                                 class="goody-footer__link"
                                                 >Visit Us</a
                                             >
@@ -1087,7 +1137,7 @@
 
                                         <li>
                                             <a
-                                                href="tel:+9107620444"
+                                                href="tel:+19107620444"
                                                 class="goody-footer__contact-item goody-font--20"
                                                 ><img
                                                     src="images/call-orange.svg"
@@ -1109,7 +1159,10 @@
 
                             <ul class="goody-footer__social-links">
                                 <li>
-                                    <a href="#">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.facebook.com/share/1Bj7UFc5zW/"
+                                    >
                                         <img
                                             src="images/facebook-orange.svg"
                                             alt="facebook"
@@ -1131,6 +1184,13 @@
         ></script>
 
         <script>
+            // ScrollSpy Navbar
+            const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: "#goody-navbar",
+                rootMargin: "-124px 0px -60%",
+            });
+
+            // Youtube Video
             document
                 .querySelectorAll(".goody-youtube-video")
                 .forEach((video) => {
