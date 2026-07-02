@@ -279,10 +279,11 @@ section {
 }
 
 .goody-section-content__list-item {
+    line-height: 1;
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 20px 40px;
+    padding: 18px 40px;
     background: #ffffe5;
     border-radius: 80px;
     -webkit-border-radius: 80px;
@@ -386,7 +387,7 @@ section {
 
 .goody-hero {
     overflow: hidden;
-    padding-top: 124px;
+    padding-top: 90px;
 }
 
 .goody-hero-main {
@@ -801,7 +802,7 @@ section {
 
 .goody-visit__layout {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 90px;
 }
 
