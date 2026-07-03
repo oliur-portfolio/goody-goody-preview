@@ -387,12 +387,12 @@ section {
 
 .goody-hero {
     overflow: hidden;
-    padding-top: 90px;
+    padding-top: 124px;
 }
 
 .goody-hero-main {
     position: relative;
-    padding-top: 120px;
+    padding-top: 86px;
     padding-bottom: 250px;
 }
 
@@ -994,6 +994,12 @@ a.goody-footer__contact-item:hover {
     justify-content: space-between;
     padding-top: 32px;
     border-top: 1px solid #e65222;
+}
+
+.goody-footer__social-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 /* Footer Area */
