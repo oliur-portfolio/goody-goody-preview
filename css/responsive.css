@@ -368,6 +368,10 @@
         font-size: 82px;
     }
 
+    .goody-font--20 {
+        line-height: 1.4;
+    }
+
     .goody-hero__image--left {
         height: 320px;
     }
@@ -452,6 +456,12 @@
     .goody-hero-main {
         padding-top: 60px;
     }
+
+    .goody-footer__bottom {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -507,10 +517,6 @@
 
     .goody-footer__contact-items {
         flex-direction: column;
-    }
-
-    .goody-footer__bottom {
-        flex-direction: column-reverse;
     }
 
     .goody-opening {
@@ -640,11 +646,6 @@
 
     .goody-footer__items {
         gap: 40px;
-    }
-
-    .goody-footer__bottom {
-        gap: 20px;
-        align-items: flex-start;
     }
 
     .goody-header .navbar-brand {
