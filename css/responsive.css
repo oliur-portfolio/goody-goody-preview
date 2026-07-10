@@ -68,6 +68,7 @@
     }
 
     .goody-header .navbar-brand {
+        width: 87px;
         height: 56px;
     }
 
@@ -618,6 +619,7 @@
     }
 
     .goody-footer__logo {
+        width: 155px;
         height: 100px;
         margin-left: 0;
         margin-right: 0;
@@ -646,6 +648,7 @@
     }
 
     .goody-header .navbar-brand {
+        width: 72px;
         height: 46px;
     }
 
